@@ -1,66 +1,180 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajude no nosso casamento!</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f7f0f5;
-            text-align: center;
-            padding: 40px;
-        }
-        .container {
-            background: #fff;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 0 20px #ccc;
-            max-width: 500px;
-            margin: auto;
-        }
-        img {
-            width: 200px;
-            margin-top: 20px;
-        }
-        .pix-key {
-            background-color: #eee;
-            padding: 10px;
-            margin: 10px 0;
-            font-weight: bold;
-            font-size: 18px;
-        }
-        .countdown {
-            font-size: 24px;
-            color: #aa336a;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Guilherme & Thamyris 💍</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #bb0055;
+      margin-bottom: 10px;
+    }
+
+    .data-casamento {
+      font-size: 18px;
+      color: #777;
+    }
+
+    .descricao {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 0 20px;
+      text-align: center;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .countdown {
+      font-size: 22px;
+      font-weight: bold;
+      color: #aa336a;
+      margin-top: 10px;
+    }
+
+    .produtos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .produto {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      width: 250px;
+      text-align: center;
+    }
+
+    .produto h2 {
+      margin: 10px 0 5px;
+    }
+
+    .produto p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .produto .valor {
+      font-weight: bold;
+      margin: 10px 0;
+      color: #222;
+    }
+
+    .produto a {
+      background-color: #bb0055;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+
+    .produto a:hover {
+      background-color: #e91e63;
+    }
+
+    .rodape {
+      margin: 50px 0 20px;
+      text-align: center;
+      font-size: 13px;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Contagem Regressiva para o Casamento! 💍</h1>
-        <div class="countdown" id="countdown"></div>
-        <p>Nos ajude a realizar esse sonho! 🙏</p>
-        <p>Sua contribuição será muito bem-vinda. Qualquer valor é de coração ❤️</p>
 
-        <div class="pix-key">Chave PIX: <br> <strong>SEUEMAIL@exemplo.com</strong></div>
-        <p>Escaneie o QR Code abaixo:</p>
-        <img src="https://api.qrserver.com/v1/create-qr-code/?data=SEUEMAIL@exemplo.com&size=200x200" alt="QR Code PIX">
+  <header>
+    <img src="sua_foto.jpg" alt="Foto do casal">
+    <h1>Guilherme & Thamyris</h1>
+    <div class="data-casamento">💒 Casamento em: 16 de Outubro de 2027</div>
+    <div class="countdown" id="countdown">Carregando contagem...</div>
+  </header>
 
-        <p>Muito obrigado! 🙌</p>
+  <div class="descricao">
+    Estamos nos preparando para o grande dia! Criamos essa página para que amigos e familiares possam nos ajudar com cotas simbólicas para o nosso casamento — do pãozinho da festa à nossa lua de mel!  
+    <br><br>
+    Escolha um item, contribua e faça parte da nossa história 💕
+  </div>
+
+  <div class="produtos">
+    <div class="produto">
+      <h2>🥖 Pãozinho da Festa</h2>
+      <p>Pra ninguém sair da festa com fome</p>
+      <div class="valor">R$ 10</div>
+      <a href="https://mpago.la/link_paozinho" target="_blank">Contribuir</a>
     </div>
+    <div class="produto">
+      <h2>🍰 Bolo de Casamento</h2>
+      <p>Recheio duplo, claro!</p>
+      <div class="valor">R$ 80</div>
+      <a href="https://mpago.la/link_bolo" target="_blank">Contribuir</a>
+    </div>
+    <div class="produto">
+      <h2>🚌 Van da Galera</h2>
+      <p>Porque ninguém vai de Uber</p>
+      <div class="valor">R$ 150</div>
+      <a href="https://mpago.la/link_van" target="_blank">Contribuir</a>
+    </div>
+    <div class="produto">
+      <h2>✈️ Viagem Lua de Mel</h2>
+      <p>Contribua com nossa felicidade tropical 🏖️</p>
+      <div class="valor">R$ 300</div>
+      <a href="https://mpago.la/link_luademel" target="_blank">Contribuir</a>
+    </div>
+  </div>
 
-    <script>
-        const targetDate = new Date("2027-10-16T00:00:00").getTime();
-        const countdownEl = document.getElementById("countdown");
+  <div class="rodape">
+    Guilherme & Thamyris — Agradecemos de coração 💕
+  </div>
 
-        setInterval(() => {
-            const now = new Date().getTime();
-            const diff = targetDate - now;
+  <script>
+    // Contagem regressiva
+    const targetDate = new Date("2027-10-16T00:00:00").getTime();
+    const countdownEl = document.getElementById("countdown");
 
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            countdownEl.innerText = `Faltam ${days} dias!`;
-        }, 1000);
-    </script>
+    setInterval(() => {
+      const now = new Date().getTime();
+      const diff = targetDate - now;
+
+      if (diff <= 0) {
+        countdownEl.innerText = "É hoje!!! 🎉💍";
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+      countdownEl.innerText = `Faltam ${days} dias, ${hours}h e ${minutes}min`;
+    }, 1000);
+  </script>
+
 </body>
 </html>
