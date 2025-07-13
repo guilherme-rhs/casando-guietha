@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajude no nosso casamento!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f0f5;
+            text-align: center;
+            padding: 40px;
+        }
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px #ccc;
+            max-width: 500px;
+            margin: auto;
+        }
+        img {
+            width: 200px;
+            margin-top: 20px;
+        }
+        .pix-key {
+            background-color: #eee;
+            padding: 10px;
+            margin: 10px 0;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .countdown {
+            font-size: 24px;
+            color: #aa336a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contagem Regressiva para o Casamento! 💍</h1>
+        <div class="countdown" id="countdown"></div>
+        <p>Nos ajude a realizar esse sonho! 🙏</p>
+        <p>Sua contribuição será muito bem-vinda. Qualquer valor é de coração ❤️</p>
+
+        <div class="pix-key">Chave PIX: <br> <strong>SEUEMAIL@exemplo.com</strong></div>
+        <p>Escaneie o QR Code abaixo:</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=SEUEMAIL@exemplo.com&size=200x200" alt="QR Code PIX">
+
+        <p>Muito obrigado! 🙌</p>
+    </div>
+
+    <script>
+        const targetDate = new Date("2025-10-16T00:00:00").getTime();
+        const countdownEl = document.getElementById("countdown");
+
+        setInterval(() => {
+            const now = new Date().getTime();
+            const diff = targetDate - now;
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            countdownEl.innerText = `Faltam ${days} dias!`;
+        }, 1000);
+    </script>
+</body>
+</html>
