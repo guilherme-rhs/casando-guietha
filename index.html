@@ -37,6 +37,13 @@
       color: #777;
     }
 
+    .countdown {
+      font-size: 22px;
+      font-weight: bold;
+      color: #aa336a;
+      margin-top: 10px;
+    }
+
     .descricao {
       max-width: 600px;
       margin: 20px auto;
@@ -46,11 +53,20 @@
       color: #555;
     }
 
-    .countdown {
-      font-size: 22px;
-      font-weight: bold;
-      color: #aa336a;
-      margin-top: 10px;
+    .nivel {
+      padding: 40px 20px 10px;
+    }
+
+    .nivel h2 {
+      text-align: center;
+      color: #bb0055;
+    }
+
+    .nivel p {
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 20px;
     }
 
     .produtos {
@@ -58,7 +74,6 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      padding: 40px 20px;
     }
 
     .produto {
@@ -70,7 +85,7 @@
       text-align: center;
     }
 
-    .produto h2 {
+    .produto h3 {
       margin: 10px 0 5px;
     }
 
@@ -111,87 +126,104 @@
 <body>
 
   <header>
-    <img src="recente 1.png" alt="Foto do casal">
+    <img src="Recente 1.png" alt="Foto do casal">
     <h1>Guilherme & Thamyris</h1>
-    <div class="data-casamento">💒 Casamento em: 16 de Outubro de 2027</div>
+    <div class="data-casamento">💒 Casamento em: 16 de Outubro de 2025</div>
     <div class="countdown" id="countdown">Carregando contagem...</div>
   </header>
 
   <div class="descricao">
-    Estamos nos preparando para o grande dia! Criamos essa página para que amigos e familiares possam nos ajudar com cotas simbólicas para o nosso casamento — do pãozinho da festa à nossa lua de mel!  
+    O grande dia está chegando! Criamos esta página para que amigos e familiares possam nos ajudar com cotas simbólicas do nosso casamento — de forma leve, divertida e cheia de amor 💕  
     <br><br>
-    Escolha um item, contribua e faça parte da nossa história 💕
+    Escolha um item que combine com você e contribua com o que o coração (ou o bolso) mandar!
   </div>
 
-  <div class="produtos">
-    <div class="produto">
-      <h2>🥖 Pãozinho da Festa</h2>
-      <p>Pra ninguém sair da festa com fome</p>
-      <div class="valor">R$ 10</div>
-      <a href="https://mpago.la/2dJBTPc" target="_blank">Contribuir</a>
+  <!-- NÍVEL 1 -->
+  <div class="nivel">
+    <h2>🟢 Nível 1 — Tá apertado, mas ajuda vai!</h2>
+    <p>Contribuições sinceras direto do coração (e do bolso apertado).</p>
+    <div class="produtos">
+      <div class="produto">
+        <h3>🥖 Pãozinho da Festa</h3>
+        <p>Pra ninguém sair da festa com fome</p>
+        <div class="valor">R$ 10</div>
+        <a href="https://mpago.la/link_paozinho" target="_blank">Contribuir</a>
+      </div>
+      <div class="produto">
+        <h3>🥤 Refri da Galera</h3>
+        <p>Sem gelo e com emoção!</p>
+        <div class="valor">R$ 15</div>
+        <a href="https://mpago.la/link_refri" target="_blank">Contribuir</a>
+      </div>
     </div>
-    <div class="produto">
-      <h2>🍰 Bolo de Casamento</h2>
-      <p>Recheio duplo, claro!</p>
-      <div class="valor">R$ 80</div>
-      <a href="https://mpago.la/link_bolo" target="_blank">Contribuir</a>
+  </div>
+
+  <!-- NÍVEL 2 -->
+  <div class="nivel">
+    <h2>🟡 Nível 2 — Tá sobrando aí?</h2>
+    <p>Dá pra dividir no cartão, né? Só um mimo simbólico!</p>
+    <div class="produtos">
+      <div class="produto">
+        <h3>🍰 Bolo de Casamento</h3>
+        <p>Recheio duplo, claro!</p>
+        <div class="valor">R$ 80</div>
+        <a href="https://mpago.la/link_bolo" target="_blank">Contribuir</a>
+      </div>
+      <div class="produto">
+        <h3>💐 Buquê da Noiva</h3>
+        <p>Com flores que nem causam alergia</p>
+        <div class="valor">R$ 60</div>
+        <a href="https://mpago.la/link_buque" target="_blank">Contribuir</a>
+      </div>
     </div>
-    <div class="produto">
-      <h2>🚌 Van da Galera</h2>
-      <p>Porque ninguém vai de Uber</p>
-      <div class="valor">R$ 150</div>
-      <a href="https://mpago.la/link_van" target="_blank">Contribuir</a>
+  </div>
+
+  <!-- NÍVEL 3 -->
+  <div class="nivel">
+    <h2>🟠 Nível 3 — Rapaz... tem dinheiro hein?</h2>
+    <p>O casal até emocionou aqui. Já ajuda até com a banda!</p>
+    <div class="produtos">
+      <div class="produto">
+        <h3>🚌 Van da Galera</h3>
+        <p>Porque ninguém vai de Uber</p>
+        <div class="valor">R$ 150</div>
+        <a href="https://mpago.la/link_van" target="_blank">Contribuir</a>
+      </div>
+      <div class="produto">
+        <h3>📸 Fotógrafo Profissa</h3>
+        <p>Pra registrar o choro e o arroz!</p>
+        <div class="valor">R$ 200</div>
+        <a href="https://mpago.la/link_fotografo" target="_blank">Contribuir</a>
+      </div>
     </div>
-    <div class="produto">
-      <h2>✈️ Viagem Lua de Mel</h2>
-      <p>Contribua com nossa felicidade tropical 🏖️</p>
-      <div class="valor">R$ 300</div>
-      <a href="https://mpago.la/link_luademel" target="_blank">Contribuir</a>
-    </div>
-    <div class="produto">
-      <h2>✈️ Viagem Lua de Mel</h2>
-      <p>Contribua com nossa felicidade tropical 🏖️</p>
-      <div class="valor">R$ 300</div>
-      <a href="https://mpago.la/link_luademel" target="_blank">Contribuir</a>
-    </div>
-    <div class="produto">
-      <h2>✈️ Viagem Lua de Mel</h2>
-      <p>Contribua com nossa felicidade tropical 🏖️</p>
-      <div class="valor">R$ 300</div>
-      <a href="https://mpago.la/link_luademel" target="_blank">Contribuir</a>
-    </div>
-    <div class="produto">
-      <h2>✈️ Viagem Lua de Mel</h2>
-      <p>Contribua com nossa felicidade tropical 🏖️</p>
-      <div class="valor">R$ 300</div>
-      <a href="https://mpago.la/link_luademel" target="_blank">Contribuir</a>
-    </div>
-    <div class="produto">
-      <h2>✈️ Viagem Lua de Mel</h2>
-      <p>Contribua com nossa felicidade tropical 🏖️</p>
-      <div class="valor">R$ 300</div>
-      <a href="https://mpago.la/link_luademel" target="_blank">Contribuir</a>
-    </div>
-    <div class="produto">
-      <h2>✈️ Viagem Lua de Mel</h2>
-      <p>Contribua com nossa felicidade tropical 🏖️</p>
-      <div class="valor">R$ 300</div>
-      <a href="https://mpago.la/link_luademel" target="_blank">Contribuir</a>
-    </div>
-    <div class="produto">
-      <h2>✈️ Viagem Lua de Mel</h2>
-      <p>Contribua com nossa felicidade tropical 🏖️</p>
-      <div class="valor">R$ 300</div>
-      <a href="https://mpago.la/link_luademel" target="_blank">Contribuir</a>
+  </div>
+
+  <!-- NÍVEL 4 -->
+  <div class="nivel">
+    <h2>🔴 Nível 4 — Eita! Rico assim que eu gosto 💰</h2>
+    <p>Ajuda de gente fina, elegante e sincera. Bora pra lua de mel!</p>
+    <div class="produtos">
+      <div class="produto">
+        <h3>✈️ Viagem Lua de Mel</h3>
+        <p>Contribua com nossa felicidade tropical 🏖️</p>
+        <div class="valor">R$ 300</div>
+        <a href="https://mpago.la/link_luademel" target="_blank">Contribuir</a>
+      </div>
+      <div class="produto">
+        <h3>🏨 Noite de Núpcias</h3>
+        <p>Com jacuzzi e pétalas, claro!</p>
+        <div class="valor">R$ 400</div>
+        <a href="https://mpago.la/link_nupcias" target="_blank">Contribuir</a>
+      </div>
     </div>
   </div>
 
   <div class="rodape">
-    Guilherme & Thamyris — Agradecemos de coração 💕
+    Guilherme & Thamyris — Agradecem de coração 💕 <br>
+    Casamento: 16/10/2025
   </div>
 
   <script>
-    // Contagem regressiva
     const targetDate = new Date("2027-10-16T00:00:00").getTime();
     const countdownEl = document.getElementById("countdown");
 
